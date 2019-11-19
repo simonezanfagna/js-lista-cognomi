@@ -1,6 +1,11 @@
 var cognome = prompt("Inserisci il tuo cognome");
 var lista_cognomi = ['Rossi', 'Ferrari', 'Russo', 'Bianchi'];
 
+// prima lettera del cognome maiuscola
+prima_lettera_cognome = cognome.charAt(0).toUpperCase();
+resto_del_cognome = cognome.slice(1).toLowerCase();
+cognome = prima_lettera_cognome + resto_del_cognome;
+console.log(cognome);
 
 // Metodo 1
 
